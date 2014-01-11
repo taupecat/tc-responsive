@@ -27,29 +27,9 @@ and Blueprint http://www.blueprintcss.org/
 @import "compass/css3";
 
 
-/* =Variables
+/* =Library Partials
 -------------------------------------------------------------- */
-@import "lib/variables";
-
-
-/* =Fonts
--------------------------------------------------------------- */
-@import "lib/fonts";
-
-
-/* =Extend
--------------------------------------------------------------- */
-@import "lib/extend";
-
-
-/* =Mixins
--------------------------------------------------------------- */
-@import "lib/mixins";
-
-
-/* =Responsive
--------------------------------------------------------------- */
-@import "lib/responsive";
+@import "lib/lib";
 
 
 /**
@@ -70,11 +50,6 @@ and Blueprint http://www.blueprintcss.org/
 /* =Header
 ----------------------------------------------- */
 @import "running/header";
-
-
-/* =Menu
------------------------------------------------ */
-@import "menu";
 
 
 /* =Content
