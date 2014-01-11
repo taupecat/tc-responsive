@@ -199,16 +199,16 @@ textarea {
 
 /* Links */
 a {
-	color: royalblue;
+	color: $red;
 
 	&:visited {
-		color: purple;
+		color: $red-dark;
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: midnightblue;
+		color: $red-light;
 	}
 }
 
