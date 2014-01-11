@@ -29,13 +29,13 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 
-				<h1 class="menu-toggle"><span>Menu</span></h1>
-
 				<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+				<a href="#!" class="menu-toggle"><span>Menu</span></a>
 
 				<div class="menu">
 
-					<ul>
+					<ul class="nav-menu">
 						<li class="current_page_item"><a href="/">Home</a></li>
 						<li class="page_item page-item-2"><a href="#!">Sample Page</a></li>
 					</ul>
@@ -48,7 +48,6 @@
 		</header>
 		<!-- // #masthead -->
 
-		<?php /*
 		<div id="content" class="site-content">
 
 			<div id="primary" class="content-area">
@@ -143,6 +142,7 @@
 		</div>
 		<!-- // #content -->
 
+		<?php /*
 		<footer id="colophon" class="site-footer" role="contentinfo">
 
 			<div class="site-info">

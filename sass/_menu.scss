@@ -1,19 +1,16 @@
 .main-navigation {
-	background-color: $gray-dark;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+	margin-bottom: 1em;
 
-	@include background-image( linear-gradient( 180deg, rgba(255, 255, 255, 0.23) 0, transparent 100% ) );
-	@include rem(height, 35px);
-
-	ul {
+	.nav-menu {
 		background-color: $gray-dark;
+		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+
+		@include responsive("min-width: 37.5em") {
+			display: block;
+		}
 	}
 
 	li {
@@ -21,20 +18,20 @@
 
 		@include rem(height, 35px);
 		@include rem(line-height, 35px);
-	}
 
-	a {
-		color: #fff;
-		display: block;
-		font-weight: $font-semibold;
-		height: 100%;
-		line-height: ( 30px / 14px );
-		padding: 0 cp(10px, 320px);
-		text-decoration: none;
-		text-transform: uppercase;
+		a {
+			color: #fff;
+			display: block;
+			font-weight: $font-semibold;
+			height: 100%;
+			line-height: ( 30px / 14px );
+			padding: 0 cp(10px, 320px);
+			text-decoration: none;
+			text-transform: uppercase;
 
-		@include hover-state {
-			background-color: rgba(255, 255, 255, 0.1);
+			@include hover-state {
+				background-color: rgba(255, 255, 255, 0.1);
+			}
 		}
 	}
 
@@ -78,18 +75,30 @@
 
 	.current_page_item a,
 	.current-menu-item a {
+		background-color: rgba(255, 255, 255, 0.1);
+	}
+
+	/** Skip Nav Link */
+	.skip-link:focus {
+		background-color: $gray-dark;
+		color: #fff;
 	}
 }
 
 /* Small menu */
 .menu-toggle {
+	background-color: $gray-dark;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 	cursor: pointer;
-	display: none;
-	height: 100%;
+	display: block;
 	line-height: 35px;
 	padding: 0 cp(10px, 320px);
+	text-decoration: none;
+	width: 100%;
 
+	@include background-image( linear-gradient( 180deg, rgba(255, 255, 255, 0.23) 0, transparent 100% ) );
 	@include font-size(20px);
+	@include rem(height, 35px);
 
 	&:before {
 		color: #fff;
@@ -101,14 +110,8 @@
 	span {
 		margin-left: -200%;
 	}
-}
 
-@media screen and (max-width: 600px) {
-	.menu-toggle {
-		display: block;
-	}
-
-	.main-navigation ul {
+	@include responsive("min-width: 37.5em") {
 		display: none;
 	}
 }

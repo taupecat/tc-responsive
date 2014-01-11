@@ -22,9 +22,6 @@
 		return;
 	}
 
-	if ( ! $menu.hasClass('nav-menu') )
-		$menu.addClass('nav-menu');
-
 	$button.on( 'click', function() {
 		$menu.slideToggle();
 	});
