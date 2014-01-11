@@ -1,0 +1,70 @@
+header[role="banner"] {
+	background: url("images/banners/copenhagen.jpg") no-repeat center top;
+	background-size: cover;
+	border-top: 4px solid $gray-dark;
+
+	@include hidpi {
+		background-image: url("images/banners/copenhagen@2x.jpg");
+	}
+
+	@include rem(height, 164px);
+
+	> a {
+		color: #fff;
+		display: block;
+		height: 100%;
+		position: relative;
+		text-decoration: none;
+		width: 100%;
+
+		@include rem(padding-top, 10px);
+	}
+
+
+	/**
+	 * Logo
+	 */
+	.site-logo {
+		@extend %ir;
+
+		background: url("images/logo.png") no-repeat 0 0;
+		height: 75px;
+		margin: 0 auto;
+		width: 75px;
+
+		@include hidpi {
+			background-image: url("images/logo@2x.png");
+			background-size: 75px auto;
+		}
+	}
+
+
+	/**
+	 * Site Branding
+	 */
+	.site-branding {
+		background-color: rgba(0, 0, 0, 0.5);
+		bottom: 0;
+		left: 0;
+		padding: 5px cp(10px, 320px);
+		padding: cr(5px) cp(10px, 320px);
+		position: absolute;
+		width: 100%;
+
+		@include font-size(12px);
+		@include rem(height, 56px);
+	}
+
+	.site-title {
+		font-size: ce(20px, 12px);
+		font-weight: $font-bold;
+		line-height: (24px / 20px);
+		text-transform: lowercase;
+	}
+
+	.site-description {
+		font-family: $font-serif;
+		font-style: italic;
+		line-height: (24px / 12px);
+	}
+}

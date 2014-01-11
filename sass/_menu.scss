@@ -1,0 +1,114 @@
+.main-navigation {
+	background-color: $gray-dark;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	@include background-image( linear-gradient( 180deg, rgba(255, 255, 255, 0.23) 0, transparent 100% ) );
+	@include rem(height, 35px);
+
+	ul {
+		background-color: $gray-dark;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+	}
+
+	li {
+		border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+		@include rem(height, 35px);
+		@include rem(line-height, 35px);
+	}
+
+	a {
+		color: #fff;
+		display: block;
+		font-weight: $font-semibold;
+		height: 100%;
+		line-height: ( 30px / 14px );
+		padding: 0 cp(10px, 320px);
+		text-decoration: none;
+		text-transform: uppercase;
+
+		@include hover-state {
+			background-color: rgba(255, 255, 255, 0.1);
+		}
+	}
+
+	ul ul {
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+		display: none;
+		float: left;
+		left: 0;
+		position: absolute;
+		top: 1.5em;
+		z-index: 99999;
+
+		ul {
+			left: 100%;
+			top: 0;
+		}
+
+		a {
+			width: 200px;
+		}
+
+		li {
+		}
+
+		a {
+		}
+
+		li:hover > a {
+		}
+
+		:hover > a {
+		}
+
+		a:hover {
+		}
+	}
+
+	ul li:hover > ul {
+		display: block;
+	}
+
+	.current_page_item a,
+	.current-menu-item a {
+	}
+}
+
+/* Small menu */
+.menu-toggle {
+	cursor: pointer;
+	display: none;
+	height: 100%;
+	line-height: 35px;
+	padding: 0 cp(10px, 320px);
+
+	@include font-size(20px);
+
+	&:before {
+		color: #fff;
+		content: '\f419';
+		font-family: Genericons;
+	}
+
+	/** Hide the word "Menu" from the window */
+	span {
+		margin-left: -200%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.menu-toggle {
+		display: block;
+	}
+
+	.main-navigation ul {
+		display: none;
+	}
+}
