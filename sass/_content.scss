@@ -1,12 +1,12 @@
-.sticky {
-}
-.hentry {
-	margin: 0 0 1.5em;
-}
-.byline,
-.updated {
-	display: none;
-}
+// .sticky {
+// }
+// .hentry {
+// 	margin: 0 0 1.5em;
+// }
+// .byline,
+// .updated {
+// 	display: none;
+// }
 .single .byline,
 .group-blog .byline {
 	display: inline;
@@ -19,4 +19,80 @@
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+.content-area {
+	padding: 0 cp(10px, 320px);
+}
+
+.post {
+	margin-bottom: 3em;
+
+	.entry-meta {
+		margin-bottom: 1em;
+	}
+
+	.posted-on {
+		background-color: $gray-dark;
+		border-radius: 999px;
+		color: #fff;
+		display: inline-block;
+		font: {
+			family: $font-serif;
+			size: 12px;
+			size: cr(12px);
+			style: italic;
+			weight: $font-bold;
+		}
+		line-height: 1;
+		padding: 5px 15px;
+	}
+
+	&.sticky {
+		.posted-on {
+			background-color: $red;
+		}
+	}
+
+	.entry-featured-image {
+		margin-bottom: 1em;
+
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+	}
+
+	.entry-title {
+		font: italic ce(24px, $default-font-size) $font-serif;
+	}
+
+	/**
+	 * Footer Meta Data
+	 */
+	footer.entry-meta {
+		span {
+			display: block;
+			margin-bottom: 0.5em;
+
+			@include rem(line-height, 20px);
+
+			&:before {
+				color: $red;
+				font-family: Genericons;
+				font-size: ce(20px, $default-font-size);
+				margin-right: 0.5em;
+				vertical-align: middle;
+			}
+
+			&.comments-link:before {
+				content: '\f300';
+			}
+
+			&.edit-link:before {
+				content: '\f411';
+			}
+		}
+	}
 }
