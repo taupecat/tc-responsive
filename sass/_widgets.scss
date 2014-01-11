@@ -1,5 +1,5 @@
 .widget {
-	margin: 0 0 1.5em;
+	margin: 0 0 3em;
 
 	/* Make sure select elements fit in widgets */
 	select {
@@ -10,4 +10,22 @@
 /* Search widget */
 .widget_search .search-submit {
 	display: none;
+}
+
+/**
+ * Sidebar
+ */
+.sidebar {
+	background-color: $gray-light;
+	border-top: 4px solid $gray-dark;
+	padding: 1em cp(10px, 320px);
+
+	.widget-title {
+		border: solid $gray-dark;
+		border-width: 1px 0;
+		font-weight: $font-bold;
+		margin-bottom: 1em;
+		text-align: center;
+		text-transform: uppercase;
+	}
 }
