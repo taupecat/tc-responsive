@@ -54,19 +54,66 @@
 
 				<main id="main" class="site-main" role="main">
 
+					<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized sticky">
+
+						<header class="entry-header">
+
+							<div class="entry-meta">
+
+								<span class="posted-on"><time class="entry-date published" datetime="2013-12-30T04:05:17+00:00">Dec 30 2013</time></span>
+
+							</div>
+							<!-- // .entry-meta -->
+
+							<div class="entry-featured-image">
+
+								<img src="images/fpo-1.jpg" width="300" height="198" alt="Photo of a golden forest.">
+
+							</div>
+							<!-- // .entry-featured-image -->
+
+							<h1 class="entry-title"><a href="#!" rel="bookmark">Template: Sticky</a></h1>
+
+						</header>
+
+						<div class="entry-content">
+
+							<p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!</p>
+
+						</div>
+						<!-- // .entry-content -->
+
+						<footer class="entry-meta">
+
+							<span class="comments-link"><a href="#!" title="Comment on Hello world!">1 Comment</a></span>
+
+							<span class="edit-link"><a class="post-edit-link" href="#!">Edit</a></span>
+
+						</footer>
+						<!-- // .entry-meta -->
+
+					</article>
+					<!-- // #post-## -->
+
 					<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized">
 
 						<header class="entry-header">
 
-							<h1 class="entry-title"><a href="#!" rel="bookmark">Hello world!</a></h1>
-
 							<div class="entry-meta">
 
-								<span class="posted-on">Posted on <a href="#!" rel="bookmark"><time class="entry-date published" datetime="2013-12-30T04:05:17+00:00">December 30, 2013</time></a></span>
-								<span class="byline"> by <span class="author vcard"><a class="url fn n" href="#!">admin</a></span></span>
+								<span class="posted-on"><time class="entry-date published" datetime="2013-12-30T04:05:17+00:00">Dec 30 2013</time></span>
 
 							</div>
 							<!-- // .entry-meta -->
+
+							<div class="entry-featured-image">
+
+								<img src="images/fpo-2.jpg" width="300" height="148" alt="Photo of a kitten.">
+
+							</div>
+							<!-- // .entry-featured-image -->
+
+							<h1 class="entry-title"><a href="#!" rel="bookmark">Hello world!</a></h1>
 
 						</header>
 
@@ -95,7 +142,7 @@
 			</div>
 			<!-- // #primary -->
 
-			<div id="secondary" class="widget-area" role="complementary">
+			<div id="secondary" class="sidebar widget-area" role="complementary">
 
 				<aside id="search" class="widget widget_search">
 
