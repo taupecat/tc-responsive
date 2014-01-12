@@ -29,9 +29,19 @@
 .sidebar {
 	background-color: $gray-light;
 	border-top: 4px solid $gray-dark;
-	padding: 1em cp(10px, 320px);
+	padding: 1em cp(10px, $context-small);
 
 	.widget-title {
 		border-color: $gray-dark;
+	}
+
+	/** First Breakpoint */
+	@include bp(medium) {
+		background-color: transparent;
+		border-top: none;
+		padding: 0;
+
+		@include griddr(4);
+		@include griddr-last;
 	}
 }

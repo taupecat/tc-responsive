@@ -21,15 +21,39 @@
 	margin: 0 0 1.5em;
 }
 
+@include bp(medium) {
+	.site-content {
+		padding: 0 cp(10px, $context-medium);
+	}
+}
+
 .content-area {
-	padding: 0 cp(10px, 320px);
+	padding: 0 cp(10px, $context-small);
+
+	/** First Breakpoint */
+	@include bp(medium) {
+		padding: 0;
+
+		@include griddr(8)
+	}
 }
 
 .post {
 	margin-bottom: 3em;
 
+	@include bp(medium) {
+		.entry-meta-featured-image {
+			position: relative;
+		}
+	}
+
 	.entry-meta {
 		margin-bottom: 1em;
+
+		/** First Breakpoint */
+		@include bp(medium) {
+			margin-bottom: 0;
+		}
 	}
 
 	.posted-on {
@@ -46,16 +70,43 @@
 		}
 		line-height: 1;
 		padding: 5px 15px;
+
+		/** First Breakpoint */
+		@include bp(medium) {
+			background-color: transparentize(#000, 0.12);
+			bottom: 0;
+			line-height: 1.2;
+			margin-left: cp(10px, $context-medium);
+			padding: 20px 0 0;
+			padding: cr(20px) 0 0;
+			position: absolute;
+			text-align: center;
+
+			@include font-size(14px);
+			@include rem(height, 76px);
+			@include rem(margin-bottom, -38px);
+			@include rem(width, 76px);
+		}
 	}
 
 	&.sticky {
 		.posted-on {
 			background-color: $red;
+
+			/** First Breakpoint */
+			@include bp(medium) {
+				background-color: transparentize($red, 0.12);
+			}
 		}
 	}
 
 	.entry-featured-image {
 		margin-bottom: 1em;
+
+		/** First Breakpoint */
+		@include bp(medium) {
+			@include rem(margin-bottom, 56px);
+		}
 
 		img {
 			display: block;
