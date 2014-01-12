@@ -23,6 +23,12 @@ header[role="banner"] {
 			@include rem(height, 210px);
 			@include rem(padding-top, 21px);
 		}
+
+		/** Second Breakpoint */
+		@include bp(wide) {
+			@include rem(height, 250px);
+			@include rem(padding-top, 19px);
+		}
 	}
 
 
@@ -46,6 +52,11 @@ header[role="banner"] {
 		@include bp(medium) {
 			float: left;
 			margin-left: cp(37px, $context-medium);
+		}
+
+		/** Second Breakpoint */
+		@include bp(wide) {
+			margin-left: cp(10px, $context-wide);
 		}
 	}
 
@@ -73,6 +84,15 @@ header[role="banner"] {
 			@include font-size(14px);
 			@include rem(height, 67px);
 		}
+
+		/** Second Breakpoint */
+		@include bp(wide) {
+			padding: 14px cp(10px, $context-wide) 0;
+			padding: cr(14px) cp(10px, $context-narrow) 0;
+
+			@include font-size(18px);
+			@include rem(height, 91px);
+		}
 	}
 
 	.site-title {
@@ -80,11 +100,25 @@ header[role="banner"] {
 		font-weight: $font-bold;
 		line-height: (24px / 20px);
 		text-transform: lowercase;
+
+		/** Second Breakpoint */
+		@include bp(wide) {
+			clear: none;
+			float: left;
+		}
 	}
 
 	.site-description {
 		font-family: $font-serif;
 		font-style: italic;
 		line-height: (24px / 12px);
+
+		/** Second Breakpoint */
+		@include bp(wide) {
+			clear: none;
+			float: left;
+			line-height: 1;
+			margin: ce(13px, 18px) 0 0 cp(98px, $context-wide);
+		}
 	}
 }
