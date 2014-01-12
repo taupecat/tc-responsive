@@ -12,6 +12,17 @@
 	display: none;
 }
 
+
+/** Widget Title */
+.widget-title {
+	border-style: solid;
+	border-width: 1px 0;
+	font-weight: $font-bold;
+	margin-bottom: 1em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 /**
  * Sidebar
  */
@@ -21,11 +32,6 @@
 	padding: 1em cp(10px, 320px);
 
 	.widget-title {
-		border: solid $gray-dark;
-		border-width: 1px 0;
-		font-weight: $font-bold;
-		margin-bottom: 1em;
-		text-align: center;
-		text-transform: uppercase;
+		border-color: $gray-dark;
 	}
 }
