@@ -28,7 +28,7 @@
 }
 
 .content-area {
-	padding: 0 cp(10px, $context-small);
+	padding: 0 cp(10px, $context-narrow);
 
 	/** First Breakpoint */
 	@include bp(medium) {

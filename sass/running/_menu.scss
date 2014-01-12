@@ -33,7 +33,7 @@
 			font-weight: $font-semibold;
 			height: 100%;
 			line-height: ( 30px / 14px );
-			padding: 0 cp(10px, $context-small);
+			padding: 0 cp(10px, $context-narrow);
 			text-decoration: none;
 			text-transform: uppercase;
 
@@ -105,7 +105,7 @@
 	cursor: pointer;
 	display: block;
 	line-height: 35px;
-	padding: 0 cp(10px, $context-small);
+	padding: 0 cp(10px, $context-narrow);
 	text-decoration: none;
 	width: 100%;
 
