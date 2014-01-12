@@ -17,6 +17,12 @@ header[role="banner"] {
 		@include hidpi {
 			background-image: url("images/banners/copenhagen@2x.jpg");
 		}
+
+		/** First Breakpoint */
+		@include bp(medium) {
+			@include rem(height, 210px);
+			@include rem(padding-top, 21px);
+		}
 	}
 
 
@@ -35,6 +41,12 @@ header[role="banner"] {
 			background-image: url("images/logo@2x.png");
 			background-size: 75px auto;
 		}
+
+		/** First Breakpoint */
+		@include bp(medium) {
+			float: left;
+			margin-left: cp(37px, $context-medium);
+		}
 	}
 
 
@@ -45,13 +57,22 @@ header[role="banner"] {
 		background-color: rgba(0, 0, 0, 0.5);
 		bottom: 0;
 		left: 0;
-		padding: 5px cp(10px, 320px);
-		padding: cr(5px) cp(10px, 320px);
+		padding: 5px cp(10px, $context-small);
+		padding: cr(5px) cp(10px, $context-small);
 		position: absolute;
 		width: 100%;
 
 		@include font-size(12px);
 		@include rem(height, 56px);
+
+		/** First Breakpoint */
+		@include bp(medium) {
+			padding: 5px cp(10px, $context-medium);
+			padding: cr(5px) cp(10px, $context-medium);
+			
+			@include font-size(14px);
+			@include rem(height, 67px);
+		}
 	}
 
 	.site-title {
