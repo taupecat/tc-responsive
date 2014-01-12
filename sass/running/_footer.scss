@@ -1,0 +1,18 @@
+.site-footer {
+	background-color: $gray-dark;
+	color: $gray-light;
+	padding: 1em cp(10px, 320px);
+
+	a {
+		color: $gray-light;
+
+		@include hover-state {
+			color: #fff;
+		}
+	}
+
+	.site-info {
+		border-top: 1px solid $gray-light;
+		padding: 1em 0;
+	}
+}
