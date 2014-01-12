@@ -58,19 +58,24 @@
 
 						<header class="entry-header">
 
-							<div class="entry-meta">
+							<div class="entry-meta-featured-image">
 
-								<span class="posted-on"><time class="entry-date published" datetime="2013-12-30T04:05:17+00:00">Dec 30 2013</time></span>
+								<div class="entry-meta">
+
+									<span class="posted-on"><time class="entry-date published" datetime="2013-12-30T04:05:17+00:00">Dec 30 2013</time></span>
+
+								</div>
+								<!-- // .entry-meta -->
+
+								<div class="entry-featured-image">
+
+									<img src="images/fpo-1.jpg" width="300" height="198" alt="Photo of a golden forest.">
+
+								</div>
+								<!-- // .entry-featured-image -->
 
 							</div>
-							<!-- // .entry-meta -->
-
-							<div class="entry-featured-image">
-
-								<img src="images/fpo-1.jpg" width="300" height="198" alt="Photo of a golden forest.">
-
-							</div>
-							<!-- // .entry-featured-image -->
+							<!-- // .entry-meta-featured-image -->
 
 							<h1 class="entry-title"><a href="#!" rel="bookmark">Template: Sticky</a></h1>
 
@@ -99,19 +104,24 @@
 
 						<header class="entry-header">
 
-							<div class="entry-meta">
+							<div class="entry-meta-featured-image">
 
-								<span class="posted-on"><time class="entry-date published" datetime="2013-12-30T04:05:17+00:00">Dec 30 2013</time></span>
+								<div class="entry-meta">
+
+									<span class="posted-on"><time class="entry-date published" datetime="2013-12-30T04:05:17+00:00">Dec 30 2013</time></span>
+
+								</div>
+								<!-- // .entry-meta -->
+
+								<div class="entry-featured-image">
+
+									<img src="images/fpo-2.jpg" width="300" height="148" alt="Photo of a kitten.">
+
+								</div>
+								<!-- // .entry-featured-image -->
 
 							</div>
-							<!-- // .entry-meta -->
-
-							<div class="entry-featured-image">
-
-								<img src="images/fpo-2.jpg" width="300" height="148" alt="Photo of a kitten.">
-
-							</div>
-							<!-- // .entry-featured-image -->
+							<!-- // .entry-meta-featured-image -->
 
 							<h1 class="entry-title"><a href="#!" rel="bookmark">Hello world!</a></h1>
 
