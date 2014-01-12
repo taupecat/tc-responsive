@@ -47,9 +47,10 @@ and Blueprint http://www.blueprintcss.org/
 @import "global";
 
 
-/* =Header
+/* =Running Elements
+    (Header, Main Navigation, Footer)
 ----------------------------------------------- */
-@import "running/header";
+@import "running/running";
 
 
 /* =Content
