@@ -13,6 +13,34 @@
 
 	.site-info {
 		border-top: 1px solid $gray-light;
+		clear: both;
 		padding: 1em 0;
+	}
+
+	/**
+	 * As the browser expands, the layout of the footer widget areas change
+	 */
+	
+	/** First Breakpoint */
+	@include bp(medium) {
+		.widget-area {
+			@include griddr(6);
+
+			&:nth-of-type(2),
+			&:nth-of-type(4) {
+				@include griddr-last;
+			}
+		}
+	}
+
+	/** Second Breakpoint */
+	@include bp(wide) {
+		.widget-area {
+			@include griddr(3);
+
+			&:nth-of-type(4) {
+				@include griddr-last;
+			}
+		}
 	}
 }
