@@ -189,8 +189,77 @@
 		</div>
 		<!-- // #content -->
 
-		<?php /*
 		<footer id="colophon" class="site-footer" role="contentinfo">
+
+			<div class="widget-area">
+
+				<aside id="search" class="widget widget_search">
+
+					<form role="search" method="get" class="search-form" action="#!">
+
+						<label>
+
+							<span class="screen-reader-text">Search for:</span>
+
+							<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
+
+						</label>
+
+						<input type="submit" class="search-submit" value="Search">
+
+					</form>
+
+				</aside>
+
+			</div>
+			<!-- // .widget-area -->
+
+			<div class="widget-area">
+
+				<aside id="archives" class="widget">
+
+					<h1 class="widget-title">Archives</h1>
+
+					<ul>
+						<li><a href="#!">December 2013</a></li>
+					</ul>
+
+				</aside>
+
+			</div>
+			<!-- // .widget-area -->
+
+			<div class="widget-area">
+
+				<aside id="meta" class="widget">
+
+					<h1 class="widget-title">Meta</h1>
+
+					<ul>
+						<li><a href="http://local.wordpress.dev/wp-admin/">Site Admin</a></li>
+						<li><a href="http://local.wordpress.dev/wp-login.php?action=logout&#038;_wpnonce=87853e577f">Log out</a></li>
+					</ul>
+
+				</aside>
+
+			</div>
+			<!-- // .widget-area -->
+
+			<div class="widget-area">
+
+				<aside id="meta" class="widget">
+
+					<h1 class="widget-title">Meta</h1>
+
+					<ul>
+						<li><a href="http://local.wordpress.dev/wp-admin/">Site Admin</a></li>
+						<li><a href="http://local.wordpress.dev/wp-login.php?action=logout&#038;_wpnonce=87853e577f">Log out</a></li>
+					</ul>
+
+				</aside>
+
+			</div>
+			<!-- // .widget-area -->
 
 			<div class="site-info">
 
@@ -205,7 +274,6 @@
 
 		</footer>
 		<!-- // #colophon -->
-		*/ ?>
 
 	</div>
 	<!-- // #page -->
