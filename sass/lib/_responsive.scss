@@ -77,7 +77,7 @@ $context-wide:		1280px;
 	// Change these values as required
 	$medium: 480px / 16px * 1em;
 	$wide: 832px / 16px * 1em;
-	// $xlarge: 1280px / 16px * 1em;
+	$x-wide: 1280px / 16px * 1em;
 
 	@if $breakpoint == medium {
 		@media only #{$media} and (min-width: $medium) {
@@ -87,10 +87,10 @@ $context-wide:		1280px;
 		@media only #{$media} and (min-width: $wide) {
 			@content;
 		}
-	// } @else if $breakpoint == xlarge {
-	// 	@media only #{$media} and (min-width: $xlarge) {
-	// 		@content;
-	// 	}
+	} @else if $breakpoint == x-wide {
+		@media only #{$media} and (min-width: $x-wide) {
+			@content;
+		}
 	}
 }
 
