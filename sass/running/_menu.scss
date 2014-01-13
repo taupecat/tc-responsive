@@ -26,6 +26,13 @@
 
 			@include rem(height, 50px);
 		}
+
+		/** Third Breakpoint */
+		@include bp(x-wide) {
+			margin-left: auto;
+			margin-right: auto;
+			width: 1240px;
+		}
 	}
 
 	li {
