@@ -54,7 +54,7 @@
 
 				<main id="main" class="site-main" role="main">
 
-					<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized sticky">
+					<article id="post-1" class="post-1 post type-post status-publish format-standard hentry category-uncategorized sticky featured-image">
 
 						<header class="entry-header">
 
@@ -112,13 +112,6 @@
 
 								</div>
 								<!-- // .entry-meta -->
-
-								<div class="entry-featured-image">
-
-									<img src="images/fpo-2.jpg" width="300" height="148" alt="Photo of a kitten.">
-
-								</div>
-								<!-- // .entry-featured-image -->
 
 							</div>
 							<!-- // .entry-meta-featured-image -->
@@ -277,7 +270,7 @@
 
 				<span class="sep"> | </span>
 
-				Theme: Responsive WP by <a href="http://underscores.me" rel="designer">Underscores.me</a>.
+				Theme: TC Responsive by <a href="http://underscores.me" rel="designer">Underscores.me</a>.
 
 			</div>
 			<!-- // .site-info -->
